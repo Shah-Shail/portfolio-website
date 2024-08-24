@@ -1,6 +1,32 @@
+import Layout from 'src/components/layout/Layout'
+import Home from '../../components/pages/home'
+import Resume from '../../components/pages/resume'
+import Contact from '../../components/pages/contact'
+import { AppRoutingConfig } from '../../assests/config/AppRoutingConfig'
+
 export const routesConfig = [
   {
-    path: '/',
-    element: <h1 className="text-3xl font-bold underline">Home</h1>
+    path: AppRoutingConfig.APP_HOME,
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    )
+  },
+  {
+    path: AppRoutingConfig.APP_RESUME,
+    element: (
+      <Layout>
+        <Resume />
+      </Layout>
+    )
+  },
+  {
+    path: AppRoutingConfig.APP_CONTACT,
+    element: (
+      <Layout>
+        <Contact />
+      </Layout>
+    )
   }
 ]

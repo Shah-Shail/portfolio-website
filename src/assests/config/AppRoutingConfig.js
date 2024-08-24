@@ -1,3 +1,7 @@
 export class AppRoutingConfig {
-  static APP_TEST_COMPONENT = '/test'
+  static APP_HOME = '/'
+
+  static APP_RESUME = '/resume'
+
+  static APP_CONTACT = '/contact'
 }
