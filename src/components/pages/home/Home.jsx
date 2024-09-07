@@ -2,6 +2,7 @@ import { Button } from '../../ui/button'
 import { FiDownload } from 'react-icons/fi'
 import Social from '../../common/social'
 import Photo from '../../common/photo'
+import Stats from '../../common/stats'
 
 const Home = () => {
   return (
@@ -39,6 +40,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   )
 }
