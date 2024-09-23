@@ -44,7 +44,7 @@ export const experience = {
   items: [
     {
       company: 'Arche Softronix',
-      position: 'Associate Front End Developer',
+      position: 'Associate Front-End Developer',
       duration: 'Sep 2022 - Present'
     },
     {
