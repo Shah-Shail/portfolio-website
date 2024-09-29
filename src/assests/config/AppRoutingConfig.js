@@ -3,5 +3,5 @@ export class AppRoutingConfig {
 
   static APP_RESUME = '/resume'
 
-  static APP_CONTACT = '/contact'
+  static APP_WORK = '/work'
 }

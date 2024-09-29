@@ -1,7 +1,7 @@
 import Layout from 'src/components/layout/Layout'
 import Home from '../../components/pages/home'
 import Resume from '../../components/pages/resume'
-import Contact from '../../components/pages/contact'
+import Work from '../../components/pages/work'
 import { AppRoutingConfig } from '../../assests/config/AppRoutingConfig'
 
 export const routesConfig = [
@@ -22,10 +22,10 @@ export const routesConfig = [
     )
   },
   {
-    path: AppRoutingConfig.APP_CONTACT,
+    path: AppRoutingConfig.APP_WORK,
     element: (
       <Layout>
-        <Contact />
+        <Work />
       </Layout>
     )
   }

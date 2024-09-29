@@ -1,44 +1,23 @@
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNode } from 'react-icons/fa'
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNode, FaPython, FaGit } from 'react-icons/fa'
 
-import { SiTailwindcss, SiNextdotjs } from 'react-icons/si'
+import {
+  SiTailwindcss,
+  SiRedux,
+  SiTypescript,
+  SiTestinglibrary,
+  SiAntdesign,
+  SiExpress,
+  SiMongodb
+} from 'react-icons/si'
 
-// about data
-export const about = {
-  title: 'About me',
-  description:
-    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, excepturi nesciunt.',
-  info: [
-    {
-      fieldName: 'Name',
-      fieldValue: 'Shail Shah'
-    },
-    {
-      fieldName: 'Phone',
-      fieldValue: '(+91) 997 99 064 54'
-    },
-    {
-      fieldName: 'Experience',
-      fieldValue: '2+ Years'
-    },
-    {
-      fieldName: 'Nationality',
-      fieldValue: 'Indian'
-    },
-    {
-      fieldName: 'Email',
-      fieldValue: 'shailshah2526@gmail.com'
-    },
-    {
-      fieldName: 'Languages',
-      fieldValue: 'English, Hindi, Gujarati'
-    }
-  ]
-}
+import { TbSql } from 'react-icons/tb'
+
+import { VscVscode } from 'react-icons/vsc'
 
 //  experience data
 export const experience = {
   icon: '/public/assets/resume/badge.svg',
-  title: 'My experience',
+  title: 'My Experience',
   description:
     'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, excepturi nesciunt.',
   items: [
@@ -68,7 +47,7 @@ export const experience = {
 //  education data
 export const education = {
   icon: '/public/assets/resume/cap.svg',
-  title: 'My education',
+  title: 'My Education',
   description:
     'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, excepturi nesciunt.',
   items: [
@@ -80,7 +59,7 @@ export const education = {
     },
     {
       institution: 'Online Course Platform',
-      degree: ' HTML5,CSS3,JavaScript&Python',
+      degree: ' HTML5,CSS3,JavaScript & Python',
       duration: '2020'
     },
     {
@@ -99,35 +78,100 @@ export const skills = {
   skillList: [
     {
       icon: <FaHtml5 />,
-      name: 'html 5'
+      name: 'Html5'
     },
     {
       icon: <FaCss3 />,
-      name: 'css 3'
+      name: 'Css3'
     },
     {
       icon: <FaJs />,
-      name: 'javascript'
+      name: 'Javascript'
+    },
+    {
+      icon: <SiTypescript />,
+      name: 'Typescript'
+    },
+    {
+      icon: <FaPython />,
+      name: 'Python'
     },
     {
       icon: <FaReact />,
-      name: 'react.js'
+      name: 'React.js'
     },
     {
-      icon: <SiNextdotjs />,
-      name: 'next.js'
+      icon: <SiRedux />,
+      name: 'Redux'
+    },
+    {
+      icon: <SiTestinglibrary />,
+      name: 'React Testing'
+    },
+    {
+      icon: <SiAntdesign />,
+      name: 'UI Library'
     },
     {
       icon: <SiTailwindcss />,
-      name: 'tailwind.css'
+      name: 'Tailwind.css'
     },
     {
       icon: <FaNode />,
-      name: 'node.js'
+      name: 'Node.js'
     },
     {
-      icon: <FaFigma />,
-      name: 'figma'
+      icon: <SiExpress />,
+      name: 'Express.js'
+    },
+    {
+      icon: <SiMongodb />,
+      name: 'MongoDB'
+    },
+    {
+      icon: <TbSql />,
+      name: 'SQL'
+    },
+    {
+      icon: <VscVscode />,
+      name: 'VS Code'
+    },
+    {
+      icon: <FaGit />,
+      name: 'Git'
+    }
+  ]
+}
+
+// about data
+export const about = {
+  title: 'About me',
+  description:
+    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, excepturi nesciunt.',
+  info: [
+    {
+      fieldName: 'Name',
+      fieldValue: 'Shail Shah'
+    },
+    {
+      fieldName: 'Email',
+      fieldValue: 'shailshah2526@gmail.com'
+    },
+    {
+      fieldName: 'Phone',
+      fieldValue: '(+91) 997 99 064 54'
+    },
+    {
+      fieldName: 'Experience',
+      fieldValue: '2+ Years'
+    },
+    {
+      fieldName: 'Nationality',
+      fieldValue: 'Indian'
+    },
+    {
+      fieldName: 'Languages',
+      fieldValue: 'English, Hindi, Gujarati'
     }
   ]
 }

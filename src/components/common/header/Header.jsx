@@ -16,7 +16,7 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link to={AppRoutingConfig.APP_CONTACT}>
-            <Button>Hire me</Button>
+            <Button>Download CV</Button>
           </Link>
         </div>
 

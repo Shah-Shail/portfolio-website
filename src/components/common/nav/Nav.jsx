@@ -11,8 +11,8 @@ const links = [
     path: AppRoutingConfig.APP_RESUME
   },
   {
-    name: 'contact',
-    path: AppRoutingConfig.APP_CONTACT
+    name: 'work',
+    path: AppRoutingConfig.APP_WORK
   }
 ]
 
