@@ -7,6 +7,7 @@ import 'swiper/css'
 import { BsArrowUpRight, BsGithub } from 'react-icons/bs'
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../ui/tooltip'
+import WorkSliderBtns from '../../common/work-slider-btn'
 
 const projects = [
   {
@@ -56,7 +57,7 @@ const Work = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: 1, translation: { delay: 2.4, duration: 0.4, ease: 'easeIn' } }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -126,7 +127,7 @@ const Work = () => {
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                       {/* overlay */}
-                      <div></div>
+                      <div className="absoulute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
                       <div className="relative w-full h-full">
                         <img src={project.image} className="object-cover" alt="" />
@@ -135,6 +136,11 @@ const Work = () => {
                   </SwiperSlide>
                 )
               })}
+              {/* Slider buttons*/}
+              <WorkSliderBtns
+                containerSytyles="flex gap-2 absolute right-0 button-[calc(50% - 22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22] w-[44px] h-[44px] flex justify-center items-center transiltion-all"
+              />
             </Swiper>
           </div>
         </div>
