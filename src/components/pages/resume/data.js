@@ -19,7 +19,7 @@ export const experience = {
   icon: '/public/assets/resume/badge.svg',
   title: 'My Experience',
   description:
-    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, excepturi nesciunt.',
+    'Proven track record in diverse development roles, including finance, delivering scalable solutions with a focus on adaptability and problem-solving.',
   items: [
     {
       company: 'Arche Softronix',
@@ -49,7 +49,7 @@ export const education = {
   icon: '/public/assets/resume/cap.svg',
   title: 'My Education',
   description:
-    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, excepturi nesciunt.',
+    'Strong foundation in mathematics and web technologies like React and Python, continuously enhancing my software development expertise.',
   items: [
     {
       institution: 'Online Course Platform',
@@ -74,7 +74,7 @@ export const education = {
 export const skills = {
   title: 'My Skills',
   description:
-    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, excepturi nesciunt.',
+    'Versatile in modern web technologies including JavaScript, React, and Python, ensuring seamless integration across the development stack.',
   skillList: [
     {
       icon: <FaHtml5 />,

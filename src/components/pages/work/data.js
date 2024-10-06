@@ -14,7 +14,7 @@ export const projects = [
       { text: ' Also developed modules, incorporated essential packages, and integrated APIs.' }
     ],
     stack: [{ name: 'React.js' }, { name: 'Javascript' }, { name: 'Redux' }, { name: 'SCSS' }],
-    image: '/assets/work/thumb1.png',
+    image: '/assets/work/Proact.png',
     live: '',
     github: ''
   },
@@ -35,7 +35,7 @@ export const projects = [
       }
     ],
     stack: [{ name: 'React.js' }, { name: 'TypeScript' }, { name: 'Redux' }, { name: 'CSS' }],
-    image: '/assets/work/thumb2.png',
+    image: '/assets/work/OpsAcuity.png',
     live: '',
     github: ''
   },
@@ -59,7 +59,7 @@ export const projects = [
       { name: 'Ant Design' },
       { name: 'CSS' }
     ],
-    image: '/assets/work/thumb3.png',
+    image: '/assets/work/SynApp.png',
     live: '',
     github: ''
   }

@@ -28,7 +28,14 @@ const Work = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:gap-[30px]">
-          <div className="w-full lg:w-[50%] flex flex-col xl:justify-between order-2 lg:order-none">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              transition: { delay: 1.8, duration: 0.4, ease: 'easeIn' }
+            }}
+            className="w-full lg:w-[50%] flex flex-col xl:justify-between order-2 lg:order-none"
+          >
             <div className="flex flex-col gap-[20px] h-[50%]">
               {/* outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
@@ -94,7 +101,7 @@ const Work = () => {
                 </TooltipProvider>
               </div> */}
             </div>
-          </div>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
@@ -124,7 +131,7 @@ const Work = () => {
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
                       <div className="relative w-full h-full">
-                        <img src={project.image} className="w-full h-full" alt="" />
+                        <img src={project.image} className="w-full h-full bg-white/80" alt="" />
                       </div>
                     </motion.div>
                   </SwiperSlide>

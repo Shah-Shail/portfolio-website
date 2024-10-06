@@ -3,6 +3,7 @@ import Nav from '../nav'
 import { Button } from '../../../components/ui/button'
 import { AppRoutingConfig } from '../../../assests/config/AppRoutingConfig'
 import MobileNav from '../mobile-nav'
+import { FiDownload } from 'react-icons/fi'
 
 const Header = () => {
   return (
@@ -15,8 +16,15 @@ const Header = () => {
         </Link>
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link to={AppRoutingConfig.APP_CONTACT}>
-            <Button>Download CV</Button>
+          <Link
+            to={'/assets/resume/ShailShah_CV.pdf'}
+            download={'ShailShah_CV.pdf'}
+            target="_blank"
+          >
+            <Button variant="outline" className="flex items-center gap-2">
+              <span>Download CV</span>
+              <FiDownload className="text-xl" />{' '}
+            </Button>
           </Link>
         </div>
 
