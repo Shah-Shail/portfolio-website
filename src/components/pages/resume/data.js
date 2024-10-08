@@ -78,19 +78,19 @@ export const skills = {
   skillList: [
     {
       icon: <FaHtml5 />,
-      name: 'Html5'
+      name: 'HTML5'
     },
     {
       icon: <FaCss3 />,
-      name: 'Css3'
+      name: 'CSS3'
     },
     {
       icon: <FaJs />,
-      name: 'Javascript'
+      name: 'JavaScript'
     },
     {
       icon: <SiTypescript />,
-      name: 'Typescript'
+      name: 'TypeScript'
     },
     {
       icon: <FaPython />,
@@ -98,7 +98,7 @@ export const skills = {
     },
     {
       icon: <FaReact />,
-      name: 'React.js'
+      name: 'React.JS'
     },
     {
       icon: <SiRedux />,
@@ -110,19 +110,19 @@ export const skills = {
     },
     {
       icon: <SiAntdesign />,
-      name: 'UI Library'
+      name: 'Ant Design'
     },
     {
       icon: <SiTailwindcss />,
-      name: 'Tailwind.css'
+      name: 'Tailwind.CSS'
     },
     {
       icon: <FaNode />,
-      name: 'Node.js'
+      name: 'Node.JS'
     },
     {
       icon: <SiExpress />,
-      name: 'Express.js'
+      name: 'Express.JS'
     },
     {
       icon: <SiMongodb />,
