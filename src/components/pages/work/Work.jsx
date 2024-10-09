@@ -111,6 +111,7 @@ const Work = () => {
             className="w-full lg:w-[50%]"
           >
             <Swiper
+              rewind={true}
               spaceBetween={30}
               slidesPerView={1}
               className="lg:h-[600px] mb-12"
