@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Shah-Shail.github.io/portfolio-website",
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -36,7 +37,9 @@
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,css,scss}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -63,6 +66,7 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.35.0",
+    "gh-pages": "^6.2.0",
     "globals": "^15.9.0",
     "husky": "^8.0.0",
     "lint-staged": "^15.2.9",
