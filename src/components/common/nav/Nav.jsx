@@ -19,6 +19,9 @@ const links = [
 const Nav = () => {
   /*routing dependencies */
   const pathLocation = useLocation()
+  const getActivePath = pathLocation.pathname.split('/')?.[2]
+  const active = (link) => (link.name === 'home' && !getActivePath) || link.path === getActivePath
+
   /*routing dependencies */
   return (
     <nav className="flex gap-8">
@@ -27,7 +30,7 @@ const Nav = () => {
           <Link
             to={link.path}
             key={index}
-            className={`${link.path === pathLocation.pathname && 'text-accent border-b-2 border-accent'} capitalize font-medium hover:text-accent transition-all`}
+            className={`${active(link) && 'text-accent border-b-2 border-accent'} capitalize font-medium hover:text-accent transition-all`}
           >
             {link.name}
           </Link>

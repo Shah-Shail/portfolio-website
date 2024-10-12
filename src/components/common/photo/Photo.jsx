@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+import photo from '../../../assests/images/home/photo.png'
+
 const Photo = () => {
   return (
     <div className="w-full h-full relative">
@@ -17,7 +19,7 @@ const Photo = () => {
           }}
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
-          <img src={'/assets/img/photo.png'} alt="" className="h-[95%] w-full object-contain" />
+          <img src={photo} alt="" className="h-[95%] w-full object-contain" />
         </motion.div>
 
         <motion.svg

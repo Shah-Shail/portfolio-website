@@ -1,8 +1,12 @@
+import ProactLogo from '../../../assests/images/work/Proact.png'
+import OpsAcuityLogo from '../../../assests/images/work/OpsAcuity.png'
+import SynAppLogo from '../../../assests/images/work/SynApp.png'
+
 export const projects = [
   {
     num: '01',
     name: 'PROACT',
-    projectType: 'Company',
+    projectType: 'Company Project',
     title: 'project 1',
     description: [
       {
@@ -14,14 +18,14 @@ export const projects = [
       { text: ' Also developed modules, incorporated essential packages, and integrated APIs.' }
     ],
     stack: [{ name: 'React.js' }, { name: 'Javascript' }, { name: 'Redux' }, { name: 'SCSS' }],
-    image: '/assets/work/Proact.png',
+    image: ProactLogo,
     live: '',
     github: ''
   },
   {
     num: '02',
     name: 'OPSACUITY',
-    projectType: 'Company',
+    projectType: 'Company Project',
     title: 'project 2',
     description: [
       {
@@ -35,14 +39,14 @@ export const projects = [
       }
     ],
     stack: [{ name: 'React.js' }, { name: 'TypeScript' }, { name: 'Redux' }, { name: 'CSS' }],
-    image: '/assets/work/OpsAcuity.png',
+    image: OpsAcuityLogo,
     live: '',
     github: ''
   },
   {
     num: '03',
     name: 'SYNAPP',
-    projectType: 'Company',
+    projectType: 'Company Project',
     title: 'project 3',
     description: [
       {
@@ -59,7 +63,7 @@ export const projects = [
       { name: 'Ant Design' },
       { name: 'CSS' }
     ],
-    image: '/assets/work/SynApp.png',
+    image: SynAppLogo,
     live: '',
     github: ''
   }

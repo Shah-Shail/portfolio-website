@@ -4,7 +4,7 @@ import { Button } from '../../../components/ui/button'
 import { AppRoutingConfig } from '../../../assests/config/AppRoutingConfig'
 import MobileNav from '../mobile-nav'
 import { FiDownload } from 'react-icons/fi'
-
+import ResumeFile from '../../../assests/images/resume/ShailShah_CV.pdf'
 const Header = () => {
   return (
     <header className="py-8 xl:py-12 text-white">
@@ -16,11 +16,7 @@ const Header = () => {
         </Link>
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link
-            to={'/assets/resume/ShailShah_CV.pdf'}
-            download={'ShailShah_CV.pdf'}
-            target="_blank"
-          >
+          <Link to={ResumeFile} download={'ShailShah_CV.pdf'} target="_blank">
             <Button variant="outline" className="flex items-center gap-2">
               <span>Download CV</span>
               <FiDownload className="text-xl" />{' '}
