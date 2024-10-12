@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../ui/tooltip'
 
 const socials = [
-  { icon: <FaGithub />, path: 'https://github.com/Dil-Se-Developer', name: 'GitHub' },
+  { icon: <FaGithub />, path: 'https://github.com/Shah-Shail', name: 'GitHub' },
   { icon: <FaLinkedinIn />, path: 'https://www.linkedin.com/in/shail-s', name: 'LinkedIn' }
 ]
 

@@ -5,6 +5,7 @@ import { AppRoutingConfig } from '../../../assests/config/AppRoutingConfig'
 import MobileNav from '../mobile-nav'
 import { FiDownload } from 'react-icons/fi'
 import ResumeFile from '../../../assests/images/resume/ShailShah_CV.pdf'
+
 const Header = () => {
   return (
     <header className="py-8 xl:py-12 text-white">
@@ -23,7 +24,6 @@ const Header = () => {
             </Button>
           </Link>
         </div>
-
         <div className="xl:hidden">
           <MobileNav />
         </div>

@@ -1,8 +1,11 @@
 import { useLocation } from 'react-router-dom'
 import { Sheet, SheetContent, SheetTrigger } from '../../ui/sheet'
 import { Link } from 'react-router-dom'
+import { FiDownload } from 'react-icons/fi'
 import { CiMenuFries } from 'react-icons/ci'
 import { AppRoutingConfig } from '../../../assests/config/AppRoutingConfig'
+import ResumeFile from '../../../assests/images/resume/ShailShah_CV.pdf'
+import { Button } from '../../../components/ui/button'
 
 const links = [
   {
@@ -51,6 +54,17 @@ const MobileNav = () => {
             )
           })}
         </nav>
+        <Link
+          className="flex justify-center items-center mt-5"
+          to={ResumeFile}
+          download={'ShailShah_CV.pdf'}
+          target="_blank"
+        >
+          <Button variant="outline" className="flex items-center gap-2">
+            <span>Download CV</span>
+            <FiDownload className="text-xl" />{' '}
+          </Button>
+        </Link>
       </SheetContent>
     </Sheet>
   )
