@@ -19,7 +19,7 @@ const links = [
 const Nav = () => {
   /*routing dependencies */
   const pathLocation = useLocation()
-  const getActivePath = pathLocation.pathname.split('/')?.[2]
+  const getActivePath = pathLocation.pathname.split('/')?.[1]
   const active = (link) => (link.name === 'home' && !getActivePath) || link.path === getActivePath
 
   /*routing dependencies */
