@@ -1,15 +1,20 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.2f473be0.css",
-    "main.js": "/portfolio-website/static/js/main.5503db6a.js",
+    "main.js": "/portfolio-website/static/js/main.60753b06.js",
     "static/js/453.aac68abc.chunk.js": "/portfolio-website/static/js/453.aac68abc.chunk.js",
+    "static/media/ShailShah_CV.pdf": "/portfolio-website/static/media/ShailShah_CV.edb03ca40dee82e649e1.pdf",
+    "static/media/photo.png": "/portfolio-website/static/media/photo.a60a8d9db1af3c2d1f2f.png",
+    "static/media/OpsAcuity.png": "/portfolio-website/static/media/OpsAcuity.11522aa41f3d9f1b0304.png",
+    "static/media/Proact.png": "/portfolio-website/static/media/Proact.a9853136479621a1faa4.png",
+    "static/media/SynApp.png": "/portfolio-website/static/media/SynApp.74b9dd1a8537fac7d00f.png",
     "index.html": "/portfolio-website/index.html",
     "main.2f473be0.css.map": "/portfolio-website/static/css/main.2f473be0.css.map",
-    "main.5503db6a.js.map": "/portfolio-website/static/js/main.5503db6a.js.map",
+    "main.60753b06.js.map": "/portfolio-website/static/js/main.60753b06.js.map",
     "453.aac68abc.chunk.js.map": "/portfolio-website/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f473be0.css",
-    "static/js/main.5503db6a.js"
+    "static/js/main.60753b06.js"
   ]
 }
