@@ -21,7 +21,7 @@ const Stats = () => {
       let perPage = 100 // Set max repos per page
 
       const response = await fetch(
-        `https://api.github.com/users/Dil-Se-Developer/repos?page=${currentPage}&per_page=${perPage}`
+        `https://api.github.com/users/Shah-Shail/repos?page=${currentPage}&per_page=${perPage}`
       )
       const data = await response.json()
 
