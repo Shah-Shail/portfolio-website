@@ -33,7 +33,7 @@ import { AppRoutingConfig } from '../../assests/config/AppRoutingConfig'
 
 export const routesConfig = [
   {
-    path: '',
+    path: 'portfolio-website',
     element: <Layout />,
     children: [
       {
