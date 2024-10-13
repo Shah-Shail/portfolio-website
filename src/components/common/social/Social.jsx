@@ -5,7 +5,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../
 
 const socials = [
   { icon: <FaGithub />, path: 'https://github.com/Shah-Shail', name: 'GitHub' },
-  { icon: <FaLinkedinIn />, path: 'https://www.linkedin.com/in/shail-s', name: 'LinkedIn' }
+  { icon: <FaLinkedinIn />, path: 'https://www.linkedin.com/in/shah-shail-dev', name: 'LinkedIn' }
 ]
 
 const Social = ({ containerStyles, iconStyles }) => {
