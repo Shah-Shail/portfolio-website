@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom'
-import { Sheet, SheetContent, SheetTrigger } from '../../ui/sheet'
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '../../ui/sheet'
 import { Link } from 'react-router-dom'
 import { FiDownload } from 'react-icons/fi'
 import { CiMenuFries } from 'react-icons/ci'
@@ -35,22 +35,25 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="xl:hidden flex flex-col">
         <div className="mt-32 mb-40 text-center text-2xl">
-          <Link to={AppRoutingConfig.APP_HOME}>
-            <h1 className="text-4xl font-semibold">
-              Shail <span className="text-accent">.</span>
-            </h1>
-          </Link>
+          <SheetClose asChild>
+            <Link to={AppRoutingConfig.APP_HOME}>
+              <h1 className="text-4xl font-semibold">
+                Shail <span className="text-accent">.</span>
+              </h1>
+            </Link>
+          </SheetClose>
         </div>
         <nav className="flex flex-col justify-center items-center gap-8">
           {links.map((link, index) => {
             return (
-              <Link
-                to={link.path}
-                key={index}
-                className={`${active(link) && 'text-accent border-b-2 border-accent'} text-xl capitalize hover:text-accent transition-all`}
-              >
-                {link.name}
-              </Link>
+              <SheetClose key={index} asChild>
+                <Link
+                  to={link.path}
+                  className={`${active(link) && 'text-accent border-b-2 border-accent'} text-xl capitalize hover:text-accent transition-all`}
+                >
+                  {link.name}
+                </Link>
+              </SheetClose>
             )
           })}
         </nav>
