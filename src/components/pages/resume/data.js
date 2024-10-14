@@ -33,12 +33,12 @@ export const experience = {
     },
     {
       company: 'Money Mantra Financial Services',
-      position: 'Financial Serviecs Associate',
+      position: 'Financial Services Associate',
       duration: 'May 2021 - Feb 2022'
     },
     {
       company: 'Value Max Financial Services',
-      position: 'Financial Serviecs Associate',
+      position: 'Financial Services Associate',
       duration: 'Dec 2020 - Apr 2021'
     }
   ]
