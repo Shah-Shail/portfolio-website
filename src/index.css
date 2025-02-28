@@ -40,3 +40,21 @@ code {
 .text-outline-hover {
   -webkit-text-stroke: 1px #00ff99;
 }
+
+/* Resetting the default scrollbar styles */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(187, 187, 187);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(178, 178, 178);
+}
+/* Resetting the default scrollbar styles */

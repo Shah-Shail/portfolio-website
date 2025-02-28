@@ -1,4 +1,4 @@
-import Layout from 'src/components/layout/Layout'
+import Layout from '../../components/layout/Layout'
 import Home from '../../components/pages/home'
 import Resume from '../../components/pages/resume'
 import Work from '../../components/pages/work'
