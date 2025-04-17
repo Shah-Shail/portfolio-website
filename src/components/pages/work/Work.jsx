@@ -1,14 +1,12 @@
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
-
 import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-
 // import { BsArrowUpRight, BsGithub } from 'react-icons/bs'
-
 // import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../ui/tooltip'
 import WorkSliderBtns from '../../common/work-slider-btn'
 import { projects } from './data'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../ui/tooltip'
+import 'swiper/css'
 
 const Work = () => {
   const [project, setProject] = useState(projects[0])
@@ -54,11 +52,7 @@ const Work = () => {
               {/* project description */}
               <ul className="flex flex-col gap-[10px] list-disc marker:text-accent px-6">
                 {project.description.map((item, index) => {
-                  return (
-                    <li key={index} className="text-[16px] text-white/60">
-                      {item.text}
-                    </li>
-                  )
+                  return <PopOver contentStr={item.text} key={index} />
                 })}
               </ul>
               {/* stack */}
@@ -132,7 +126,11 @@ const Work = () => {
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
                       <div className="relative w-full h-full">
-                        <img src={project.image} className="w-full h-full bg-white/80" alt="" />
+                        <img
+                          src={project.image}
+                          className="w-full h-full bg-white/80 object-contain"
+                          alt="project image"
+                        />
                       </div>
                     </motion.div>
                   </SwiperSlide>
@@ -148,6 +146,27 @@ const Work = () => {
         </div>
       </div>
     </motion.section>
+  )
+}
+
+const PopOver = ({ contentStr, overflowContentAt = 100, key }) => {
+  return (
+    <TooltipProvider delayDuration={400}>
+      <Tooltip>
+        <TooltipTrigger>
+          <li key={key} className="text-[16px] text-white/60 text-left">
+            {contentStr?.length > overflowContentAt
+              ? `${contentStr.substring(0, overflowContentAt)}...`
+              : contentStr}
+          </li>
+        </TooltipTrigger>
+        {contentStr?.length > overflowContentAt && (
+          <TooltipContent className="w-[300px]">
+            <p className="capitalize">{contentStr}</p>
+          </TooltipContent>
+        )}
+      </Tooltip>
+    </TooltipProvider>
   )
 }
 

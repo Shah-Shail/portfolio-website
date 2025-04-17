@@ -1,11 +1,7 @@
 import { experience, education, skills } from './data'
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../ui/tabs'
-
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../ui/tooltip'
-
 import { ScrollArea } from '../../ui/scroll-area'
-
 import { motion } from 'framer-motion'
 
 const Resume = () => {

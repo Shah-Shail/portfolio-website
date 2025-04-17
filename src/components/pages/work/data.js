@@ -10,12 +10,14 @@ export const projects = [
     title: 'project 1',
     description: [
       {
-        text: 'In this healthcare project, I have experience with various packages including react-table, react-hook-form, react-select, react-zoom-pan-pinch, and several others.'
+        text: 'In this healthcare project, I played a versatile role that included developing a Report Builder module to empower users in generating dynamic, customized reports as one of several key functionalities within the application.'
       },
       {
-        text: 'Developed a Report Builder module allowing users to generate dynamic reports based on their needs.'
+        text: 'Integrated REST APIs and boosted UI performance by approximately 30% using lazy loading and efficient rendering.'
       },
-      { text: ' Also developed modules, incorporated essential packages, and integrated APIs.' }
+      {
+        text: 'I gained hands-on experience with a variety of packages such as react-table, react-hook-form, react-select, and react-zoom-pan-pinch, among others.'
+      }
     ],
     stack: [{ name: 'React.js' }, { name: 'Javascript' }, { name: 'Redux' }, { name: 'SCSS' }],
     image: ProactLogo,
@@ -35,7 +37,7 @@ export const projects = [
         text: 'I implemented comprehensive Roles and Permissions management and also utilized the ApexCharts package for graphs.'
       },
       {
-        text: 'I implemented animations in several parts of the module to make it more interactive and visually appealing for users.'
+        text: 'Implemented animations in several parts of the module to make it more interactive and visually appealing.'
       }
     ],
     stack: [{ name: 'React.js' }, { name: 'TypeScript' }, { name: 'Redux' }, { name: 'CSS' }],
@@ -50,10 +52,13 @@ export const projects = [
     title: 'project 3',
     description: [
       {
-        text: 'In this healthcare project, I developed responsive modules and layouts with UI libraries like Ant Design, integrated essential packages, and connected APIs.'
+        text: 'In this healthcare project, I developed responsive modules and layouts with UI libraries like Ant Design, integrated essential packages, and connected REST APIs.'
       },
       {
-        text: 'I developed utility functions and custom hooks for common use throughout the project.'
+        text: 'Developed a signature capture component using JavaScript and HTML5 Canvas API.'
+      },
+      {
+        text: 'To reduce code complexity, minimize duplication, and enhance readability, I developed essential utility functions and custom hooks for common use cases throughout the project.'
       }
     ],
     stack: [
